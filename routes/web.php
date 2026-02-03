@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\BetaController;
 
 Route::get('/', function () {
     return view ("welcome") ;
@@ -12,3 +13,4 @@ Route::get('/hello', function () {
 route:: view("about",'/about');
 
 route::get("game",[UserController::class,'game']);
+route::get("2nd",[BetaController::class,'second']);
