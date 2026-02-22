@@ -7,12 +7,13 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    function game()
+   public function game()
     {
-        return 'Game On';
+        return view ("welcome");
     }
-}
-{
-    function getData()
-    {}
+    
+   public function getData(Request $request)
+    {
+        return $request->all();
+    }
 }

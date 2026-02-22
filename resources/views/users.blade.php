@@ -8,12 +8,14 @@
 <body>
     <h1>User Login</h1>
     <form action="users" method="POST" >
-     
+     @csrf
         <input type="text"name="User name" placeholder="Enter your ID">
         <br><br>
         <input type="password"name="User password" placeholder="Enter your password">
         <br><br>
         <button type="submit">Login</button>
     </form>
+    <br><br>
+    <a href="/">Home</a>
 </body>
 </html>

@@ -2,9 +2,7 @@
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\BetaController;
 
-Route::get('/', function () {
-    return view ("welcome") ;
-});
+Route::get("/", [UserController::class,"game"])->name("home");
 
 Route::get('/hello', function () {
     return view ("hello") ;
