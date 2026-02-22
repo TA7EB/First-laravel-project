@@ -12,3 +12,7 @@ class UserController extends Controller
         return 'Game On';
     }
 }
+{
+    function getData()
+    {}
+}
